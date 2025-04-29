@@ -102,3 +102,11 @@ Python Backend Developer with **2+ years** of experience in designing scalable a
 - Integrated secure payments via Razorpay
 - Ensured robust schema design and API/frontend integration
 
+## 📫 Connect with Me  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vignesh118/)  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Vigneshselvaraj1811/)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=react)](https://Vigneshselvaraj1811.github.io/github-portfolio/)  
+
+---
+
