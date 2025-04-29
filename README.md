@@ -102,4 +102,3 @@ Python Backend Developer with **2+ years** of experience in designing scalable a
 - Integrated secure payments via Razorpay
 - Ensured robust schema design and API/frontend integration
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Vigneshselvaraj1811&show_icons=true&theme=radical)
