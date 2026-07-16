@@ -3,174 +3,281 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vignesh Selvaraj | Portfolio</title>
+  <title>Vignesh Selvaraj | Python Backend Developer</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 40px;
-      background: #f9f9fb;
+      background: #f0f2f5;
       color: #333;
       line-height: 1.7;
     }
-    h1, h2, h3 {
-      color: #0b5ed7;
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    header {
+      background: linear-gradient(135deg, #1a73e8, #0d47a1);
+      color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
     }
-    a {
-      color: #0b5ed7;
+    header h1 { font-size: 2em; margin-bottom: 5px; }
+    header p { font-size: 1.1em; opacity: 0.9; }
+    header .links { margin-top: 15px; }
+    header .links a {
+      color: white;
       text-decoration: none;
-      font-weight: 600;
+      margin-right: 15px;
+      font-size: 0.95em;
+      opacity: 0.9;
     }
-    a:hover {
-      text-decoration: underline;
-    }
+    header .links a:hover { opacity: 1; text-decoration: underline; }
     .section {
       background: #fff;
-      padding: 25px;
+      padding: 25px 30px;
       border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 25px;
     }
-    ul {
-      padding-left: 20px;
+    h2 {
+      color: #1a73e8;
+      font-size: 1.3em;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e8eaed;
     }
+    h3 {
+      color: #202124;
+      font-size: 1.05em;
+      margin: 15px 0 5px 0;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .job-header .company { color: #1a73e8; font-weight: 600; }
+    .job-header .date { color: #5f6368; font-size: 0.9em; }
+    ul { padding-left: 20px; margin-top: 5px; }
+    li { margin-bottom: 4px; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .skill-card {
+      background: #f8f9fa;
+      padding: 12px 15px;
+      border-radius: 8px;
+      border-left: 3px solid #1a73e8;
+    }
+    .skill-card strong { color: #1a73e8; }
+    .project-card {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .project-card h3 { margin-top: 0; }
+    .tech-tag {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a73e8;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    .cert-item {
+      padding: 8px 0;
+      border-bottom: 1px solid #f1f3f4;
+    }
+    .cert-item:last-child { border-bottom: none; }
     .badge {
       display: inline-block;
       margin-right: 10px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 30px 0;
-    }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
-  <h1>👋 Hi, I'm Vignesh Selvaraj</h1>
-  <p><strong>Software Engineer | Python Backend Developer | LLM Integrator</strong></p>
-  <p>
-    <a href="https://www.linkedin.com/in/vignesh118/">LinkedIn</a> |
-    <a href="mailto:vignesh@yaaletech.in">Email</a> |
-    📞 +91 7502528112 |
-    <a href="https://github.com/Vigneshselvaraj1811">GitHub</a>
-  </p>
+<div class="container">
 
-  <hr>
+  <header>
+    <h1>Vignesh Selvaraj</h1>
+    <p>Python Backend Developer | FastAPI | Django | ERPNext/Frappe | Docker/Kubernetes</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/vignesh118/">LinkedIn</a>
+      <a href="https://github.com/Vigneshselvaraj1811">GitHub</a>
+      <a href="https://medium.com/@datascience-hub">Medium</a>
+      <a href="mailto:vigneshaasiga2020@gmail.com">Email</a>
+      <a href="tel:+917502528112">+91 7502528112</a>
+    </div>
+  </header>
 
   <div class="section">
-    <h2>📈 About Me</h2>
-    <p>I'm a <strong>Python Backend Developer</strong> with over <strong>2+ years of experience</strong> building and optimizing scalable web applications using <strong>Django, FastAPI, Flask, and PostgreSQL</strong>.  
-    I specialize in creating <strong>secure REST APIs, integrating LLMs,</strong> and automating deployments through <strong>Docker, CI/CD, and AWS</strong>.</p>
+    <h2>About Me</h2>
+    <p>Python Backend Developer with <strong>3+ years of experience</strong> designing, building, and optimizing scalable backend systems using Django, Flask, and FastAPI. Currently at <strong>Tridots Tech</strong>, building cloud-based IDE platforms and container orchestration systems using FastAPI, Frappe/ERPNext, Docker, and Kubernetes.</p>
+    <br>
     <ul>
-      <li>Currently working at <strong>Yaale Technologies</strong> as <strong>Software Developer L2</strong></li>
-      <li>Delivered projects in <strong>banking, billing, e-commerce, and DevOps automation</strong></li>
-      <li>Experience in integrating <strong>Kore.ai</strong> Virtual Assistants and <strong>LLM-based AI systems</strong></li>
-      <li>Open-source contributor — published <strong>2 Python packages</strong></li>
+      <li>Strong expertise in PostgreSQL, MongoDB, Redis, AWS cloud deployments, and <strong>Agentic AI integrations</strong></li>
+      <li>Published <strong>2 Python packages</strong> on PyPI (termcolorsfx, pythontextstats)</li>
+      <li>Specialized in ERPNext/Frappe customization for manufacturing, retail, and insurance sectors</li>
+      <li>Experienced in e-commerce, billing, background verification, and education platforms</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>🧠 Skills</h2>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><strong>Backend</strong><br>Python, FastAPI, Django, DRF, Flask</div>
+      <div class="skill-card"><strong>ERP/Enterprise</strong><br>Frappe, ERPNext</div>
+      <div class="skill-card"><strong>Databases</strong><br>PostgreSQL, MySQL, MongoDB, Redis, SQLAlchemy</div>
+      <div class="skill-card"><strong>Cloud & DevOps</strong><br>AWS, Docker, Kubernetes, CI/CD, GitHub Actions</div>
+      <div class="skill-card"><strong>Async & Messaging</strong><br>Celery, RabbitMQ, Socket.io</div>
+      <div class="skill-card"><strong>Security</strong><br>OAuth 2.0, SAML SSO, JWT</div>
+      <div class="skill-card"><strong>AI & Data</strong><br>Agentic AI, LLM Integration, PySpark, Pandas</div>
+      <div class="skill-card"><strong>Tools</strong><br>Git, JIRA, Postman, Cursor, VS Code</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+
+    <h3>Software Engineer</h3>
+    <div class="job-header">
+      <span class="company">Tridots Tech Pvt Ltd | Chennai</span>
+      <span class="date">May 2026 - Present</span>
+    </div>
     <ul>
-      <li><strong>Backend:</strong> Python, FastAPI, Flask, Django, DRF</li>
-      <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis, SQLite</li>
-      <li><strong>DevOps & Cloud:</strong> AWS (EC2, S3, RDS, VPC, SQS, Lambda), Docker, CI/CD, GitHub Actions</li>
-      <li><strong>AI & Data Science:</strong> Kore.ai, LLM Integration, NumPy, Pandas, Matplotlib</li>
-      <li><strong>Security & Testing:</strong> UnitTest, PyTest, OAuth2, SAML SSO, JWT</li>
-      <li><strong>Messaging:</strong> Celery, RabbitMQ</li>
-      <li><strong>Tools:</strong> Git, GitHub, JIRA, Postman, PyCharm, Jupyter</li>
+      <li>Building cloud-based IDE platform using FastAPI backend services</li>
+      <li>Engineering container orchestration using Docker and Kubernetes</li>
+      <li>Developing ERPNext/Frappe modules for manufacturing, retail, insurance clients</li>
+      <li>Implementing Agentic AI workflows for intelligent business automation</li>
+    </ul>
+
+    <h3>Software Developer L2</h3>
+    <div class="job-header">
+      <span class="company">Yaale Technologies | Remote</span>
+      <span class="date">Jun 2025 - Apr 2026</span>
+    </div>
+    <ul>
+      <li>Engineered RESTful APIs using FastAPI for GURUZ education platform</li>
+      <li>Designed MongoDB schemas with Mongoose ODM for user management, payments</li>
+      <li>Built multirole authentication (Student/Guru) with JWT, OTP, OAuth, SSO</li>
+      <li>Integrated Stripe and PayPal payment gateways for secure transactions</li>
+      <li>Deployed on AWS EC2 with auto-scaling and Socket.io real-time chat</li>
+    </ul>
+
+    <h3>Junior Software Engineer</h3>
+    <div class="job-header">
+      <span class="company">iMetanic India Pvt. Ltd | Remote</span>
+      <span class="date">Jul 2024 - May 2025</span>
+    </div>
+    <ul>
+      <li>Enhanced REST APIs using Flask for SYNTROVE background verification platform</li>
+      <li>Implemented SAML SSO and OAuth for secure authentication</li>
+      <li>Managed PostgreSQL databases for high-volume verification data</li>
+      <li>Implemented encryption for U.S regulatory compliance</li>
+    </ul>
+
+    <h3>Junior Python Developer</h3>
+    <div class="job-header">
+      <span class="company">Cloud Garage LLP | Perambalur</span>
+      <span class="date">May 2023 - Jul 2024</span>
+    </div>
+    <ul>
+      <li>Auto Cloud - DevOps automation platform using Flask and PostgreSQL</li>
+      <li>Koyaca Billing System - Supermarket billing using Django and MySQL</li>
+      <li>Docker containerization and CI/CD pipelines for automated deployments</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>💼 Experience</h2>
+    <h2>Projects</h2>
 
-    <h3>Software Developer L2 — Yaale Technologies | Jun 2025 – Present</h3>
-    <ul>
-      <li>Leading backend for a <strong>banking project (Bank-X)</strong> using FastAPI and MongoDB</li>
-      <li>Developed scalable REST APIs, async transaction handling, and OAuth2/SSO security</li>
-      <li>Integrated Kore.ai and LLMs for AI-driven customer automation</li>
-      <li>Implemented monitoring and logging for production-grade APIs</li>
-    </ul>
+    <div class="project-card">
+      <h3>GURUZ - Education Platform</h3>
+      <p><span class="tech-tag">FastAPI</span><span class="tech-tag">MongoDB</span><span class="tech-tag">AWS</span><span class="tech-tag">Socket.io</span><span class="tech-tag">Stripe</span><span class="tech-tag">PayPal</span></p>
+      <ul>
+        <li>Real-time education platform with student-tutor matching</li>
+        <li>Multirole authentication with JWT, OTP, Google OAuth, LinkedIn SSO, Meta SSO</li>
+        <li>Stripe and PayPal payment integration for course purchases</li>
+        <li>Real-time chat using Socket.io between students and tutors</li>
+      </ul>
+      <p><a href="https://www.guruz.pro" target="_blank">View Live</a></p>
+    </div>
 
-    <h3>Junior Software Engineer — Imetanic India Pvt. Ltd | Jul 2024 – May 2025</h3>
-    <ul>
-      <li>Developed REST APIs for <strong>background check systems (SYNTROVE)</strong></li>
-      <li>Implemented SAML SSO, OAuth, and PostgreSQL optimization</li>
-      <li>Integrated AWS for scalable and secure data handling</li>
-    </ul>
+    <div class="project-card">
+      <h3>SYNTROVE - Background Verification</h3>
+      <p><span class="tech-tag">Flask</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Docker</span><span class="tech-tag">Redis</span><span class="tech-tag">Celery</span><span class="tech-tag">AWS</span></p>
+      <ul>
+        <li>Background verification platform for criminal records, credit checks, MVR</li>
+        <li>SAML SSO and OAuth authentication for secure access</li>
+        <li>U.S regulatory compliance with encryption and secure data handling</li>
+      </ul>
+      <p><a href="https://web.background.solutions" target="_blank">View Live</a></p>
+    </div>
 
-    <h3>Junior Python Developer — Cloud Garage LLP | May 2023 – Jul 2024</h3>
-    <ul>
-      <li>Developed <strong>Koyaca Billing System</strong> and <strong>Auto Cloud</strong> projects using Django and Flask</li>
-      <li>Enhanced backend performance by 30%, managed CI/CD pipelines</li>
-      <li>Built RESTful APIs, payment gateways, and containerized deployments</li>
-    </ul>
+    <div class="project-card">
+      <h3>ERPNext Modules - Enterprise Solutions</h3>
+      <p><span class="tech-tag">FastAPI</span><span class="tech-tag">Frappe</span><span class="tech-tag">ERPNext</span><span class="tech-tag">Docker</span><span class="tech-tag">Kubernetes</span></p>
+      <ul>
+        <li>Custom ERP modules for manufacturing, retail, and insurance sectors</li>
+        <li>Agentic AI workflows for intelligent business automation</li>
+        <li>Container orchestration with Kubernetes for automated deployments</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Auto Cloud - DevOps Automation</h3>
+      <p><span class="tech-tag">Flask</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Docker</span></p>
+      <ul>
+        <li>DevOps dashboard for multi-cloud resource automation</li>
+        <li>Docker containerization and CI/CD pipelines</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Koyaca Billing System</h3>
+      <p><span class="tech-tag">Django</span><span class="tech-tag">MySQL</span><span class="tech-tag">AWS</span></p>
+      <ul>
+        <li>Supermarket billing system with payment gateway integration</li>
+        <li>Sales, transactions, checkout processes</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>JelloweryShop - E-commerce</h3>
+      <p><span class="tech-tag">Django REST Framework</span><span class="tech-tag">MySQL</span><span class="tech-tag">Razorpay</span></p>
+      <ul>
+        <li>E-commerce platform with product, cart, and order management</li>
+        <li>Razorpay payment gateway integration</li>
+      </ul>
+    </div>
   </div>
 
   <div class="section">
-    <h2>🚀 Projects</h2>
-
-    <h3>1. Bank-X | Yaale Technologies</h3>
-    <p><strong>Technologies:</strong> FastAPI, MongoDB, Kore.ai</p>
-    <ul>
-      <li>Designed async APIs for banking-grade applications</li>
-      <li>Integrated OAuth2 and Kore.ai chat automation</li>
-      <li>Deployed microservices with Docker and CI/CD</li>
-    </ul>
-
-    <h3>2. SYNTROVE | Imetanic India Pvt. Ltd</h3>
-    <p><strong>Technologies:</strong> Flask, PostgreSQL, AWS</p>
-    <ul>
-      <li>REST APIs for background checks (criminal, credit, motor vehicle)</li>
-      <li>Implemented SAML SSO and data encryption</li>
-    </ul>
-
-    <h3>3. Koyaca Billing System | Cloud Garage LLP</h3>
-    <p><strong>Technologies:</strong> Django, MySQL, AWS</p>
-    <ul>
-      <li>Developed supermarket billing backend with Razorpay integration</li>
-      <li>Improved API response and optimized queries</li>
-    </ul>
-
-    <h3>4. Auto Cloud | Cloud Garage LLP</h3>
-    <p><strong>Technologies:</strong> Flask, PostgreSQL</p>
-    <ul>
-      <li>DevOps automation dashboard for resource provisioning</li>
-      <li>Dockerized app with CI/CD deployment pipelines</li>
-    </ul>
-
-    <h3>5. JewelryShop Management | Freelance</h3>
-    <p><strong>Technologies:</strong> Django REST Framework, MySQL</p>
-    <ul>
-      <li>RESTful APIs for product, cart, and orders</li>
-      <li>Integrated Razorpay payment gateway</li>
-    </ul>
+    <h2>Certifications & Open Source</h2>
+    <div class="cert-item">Oracle Cloud Infrastructure - Generative AI Professional</div>
+    <div class="cert-item">Udemy - Python: Deep Dive into Machine Learning</div>
+    <div class="cert-item">Techieey - Python Basics</div>
+    <div class="cert-item">Published Python packages on PyPI: <strong>termcolorsfx</strong> and <strong>pythontextstats</strong></div>
+    <div class="cert-item">Kabaddi Gold Medal - District Level Tournament</div>
   </div>
 
   <div class="section">
-    <h2>🏆 Certifications & Open Source</h2>
-    <ul>
-      <li>Oracle — Cloud Infrastructure Generative AI Professional</li>
-      <li>Kore.ai — Automation AI Certificate</li>
-      <li>Udemy — Deep Dive into Machine Learning</li>
-      <li>Techieey — Python Basic</li>
-      <li>🏅 Kabbadi Gold Medal – District Journal Level</li>
-      <li><strong>Open Source:</strong> Published Python packages — <em>termcolorsfx</em> and <em>pythontextstats</em></li>
-    </ul>
+    <h2>Education</h2>
+    <div class="cert-item"><strong>Master of Computer Application (MCA)</strong> - St. Joseph's College, Tiruchirappalli (2021-2023)</div>
+    <div class="cert-item"><strong>Bachelor of Computer Application (BCA)</strong> - Srinivasan College of Arts & Science, Perambalur (2018-2021)</div>
   </div>
 
   <div class="section">
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>Masters of Computer Application</strong> — Srinivasan College of Arts and Science, Perambalur (2021–2023)</li>
-      <li><strong>Bachelor of Computer Application</strong> — St. Joseph's College, Tiruchirappalli (2018–2021)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>📫 Connect with Me</h2>
+    <h2>Connect with Me</h2>
     <div class="badge">
       <a href="https://www.linkedin.com/in/vignesh118/">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn">
@@ -182,11 +289,18 @@
       </a>
     </div>
     <div class="badge">
+      <a href="https://medium.com/@datascience-hub">
+        <img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium" alt="Medium">
+      </a>
+    </div>
+    <div class="badge">
       <a href="https://vigneshselvaraj1811.github.io/portfolio/">
         <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=react" alt="Portfolio">
       </a>
     </div>
   </div>
+
+</div>
 
 </body>
 </html>
